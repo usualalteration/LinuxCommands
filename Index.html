@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--Nicoletta Alba-->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
+  <style>
+      body {
+      background-color: white;
+      color: black;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    body.night-mode {
+      background-color: black;
+      color: white;
+    }
+    table {
+      width: 90%;
+      margin: auto;
+      border-collapse: collapse;
+      font-family: monospace;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #FFFFFF;
+    }
+    h1 {
+      text-align: center;
+    }
+    td:first-child {
+      width: 40%;
+    }
+    .night-mode th,
+    .night-mode td {
+      background-color: #333333;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div id="nightModeToggle">
+    <label for="nightModeCheckbox">Night Mode:</label>
+    <input type="checkbox" id="nightModeCheckbox" />
+  </div>
+  <h1>Basic Linux commands</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Command</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>arch</td>
+        <td>Print machine architecture</td>
+      </tr>
+      <tr>
+        <td>awk</td>
+        <td>Find and Replace text within file(s)</td>
+      </tr>
+
+            <div align="center">&nbsp;</div>
+          </td>
+        </tr>
+        <tr>
+          <td width="20%">bc</td>
+          <td width="70%">An arbitrary precision calculator language </td>
+
+            <div align="center">&nbsp;</div>
+          </td>
+        </tr>
+        <tr>
+          <td width="20%">cal</a></td>
+          <td width="70%">Display a calendar</td>
+
+
+          </td>
+
+        </tr>
+        <tr>
+          <td width="20%">cat</a></td>
+          <td width="70%">Concatenate files and print on the standard output</td>
+
+          </td>
+
+        </tr>
+        <tr>
+          <td width="20%">chdir</a></td>
+          <td width="70%">Change working directory </td>
+
+
+          </td>
+
+        </tr>
+        <tr>
+          <td width="20%">chgrp </a></td>
+          <td width="70%">Change the group ownership of files </td>
+
+
+          </td>
+        </tr>
+        <tr>
+          <td width="20%">chkconfig</td>
+          <td width="70%">Tool for maintaining the /etc/rc[0-6].d directory hierarchy
+          </td>
+
+            <div align="center">&nbsp;</div>
+          </td>
+
+          </td>
+        </tr>
+        <tr>
+          <td width="20%">chmod </td>
+          <td width="70%">Change the access permissions of files and directories</td>
+
+
+        </tr>
+        <tr>
+          <td width="20%">chown</a></td>
+          <td width="70%">Change the user and group ownership of files</td>
+
+
+        </tr>
+        <tr>
+          <td width="20%">chroot</td>
+          <td width="70%">Change root directory</td>
+        
+            <div align="center">&nbsp;</div>
+          </td>
+        
+        </tr>
+        <tr>
+          <td>cksum</td>
+        <td>Print CRC checksum and byte counts</td>
+      </tr>
+      <tr>
+        <td>clear</td>
+        <td>Clear terminal screen</td>
+      </tr>
+      <tr>
+        <td>cmp</td>
+        <td>Compare two files</td>
+      </tr>
+      <tr>
+        <td>comm</td>
+        <td>Compare two sorted files line by line</td>
+      </tr>
+      <tr>
+        <td>cp</td>
+        <td>Copy one or more files to another location</td>
+      </tr>
+      <tr>
+        <td>cron</td>
+        <td>Daemon to execute scheduled commands</td>
+      </tr>
+      <tr>
+        <td>crontab</td>
+        <td>Schedule a command to run at a later time</td>
+      </tr>
+      <tr>
+        <td>csplit</td>
+        <td>Split a file into context-determined pieces</td>
+      </tr>
+      <tr>
+        <td>cut</td>
+        <td>Divide a file into several parts</td>
+      </tr>
+      <tr>
+        <td>date</td>
+        <td>Display or change the date &amp; time</td>
+      </tr>
+      <tr>
+        <td>dc</td>
+        <td>Desk Calculator</td>
+      </tr>
+      <tr>
+        <td>dd</td>
+        <td>Data Dump - Convert and copy a file</td>
+      </tr>
+      <tr>
+        <td>df</td>
+        <td>Display free disk space</td>
+      </tr>
+      <td>diff</td>
+      <td>Display the differences between two files</td>
+    </tr>
+    <tr>
+      <td>diff3</td>
+      <td>Show differences among three files</td>
+    </tr>
+    <tr>
+      <td>dir</td>
+      <td>Briefly list directory contents</td>
+    </tr>
+    <tr>
+      <td>dircolors</td>
+      <td>Colour setup for 'ls'</td>
+    </tr>
+    <tr>
+      <td>dirname</td>
+      <td>Convert a full pathname to just a path</td>
+    </tr>
+    <tr>
+      <td>du</td>
+      <td>Estimate file space usage</td>
+    </tr>
+    <tr>
+      <td>echo</td>
+      <td>Display message on screen</td>
+    </tr>
+    <tr>
+      <td>ed</td>
+      <td>A line-oriented text editor (edlin)</td>
+    </tr>
+    <tr>
+      <td>egrep</td>
+      <td>Search file(s) for lines that match an extended expression</td>
+    </tr>
+    <tr>
+      <td>eject</td>
+      <td>Eject CD-ROM</td>
+    </tr>
+    <tr>
+      <td>env</td>
+      <td>Display, set, or remove environment variables</td>
+    </tr>
+    <tr>
+      <td>expand</td>
+      <td>Convert tabs to spaces</td>
+    </tr>
+    <tr>
+      <td>expr</td>
+      <td>Evaluate expressions</td>
+    </tr>
+    <tr>
+      <td>factor</td>
+      <td>Print prime factors</td>
+    </tr>
+    <tr>
+      <td>false</td>
+      <td>Do nothing, unsuccessfully</td>
+    </tr>
+    <tr>
+      <td>fdformat</td>
+      <td>Low-level format a floppy disk</td>
+    </tr>
+    <tr>
+      <td>fdisk</td>
+      <td>Partition table manipulator for Linux</td>
+    </tr>
+    <tr>
+      <td>fgrep</td>
+      <td>Search file(s) for lines that match a fixed string</td>
+    </tr>
+    <tr>
+      <td>find</td>
+      <td>Search for files that meet a desired criteria</td>
+    </tr>
+    <tr>
+      <td>fmt</td>
+      <td>Reformat paragraph text</td>
+    </tr>
+    <tr>
+      <td>fold</td>
+      <td>Wrap text to fit a specified width</td>
+    </tr>
+    <tr>
+      <td>format</td>
+      <td>Format disks or tapes</td>
+    </tr>
+    <tr>
+      <td>free</td>
+      <td>Display memory usage</td>
+    </tr>
+    <tr>
+      <td>fsck</td>
+      <td>Filesystem consistency check and repair</td>
+    </tr>
+    <tr>
+      <td>gawk</td>
+      <td>Find and Replace text within file(s)</td>
+    </tr>
+    <tr>
+      <td>grep</td>
+      <td>Search file(s) for lines that match a given pattern</td>
+    </tr>
+    <tr>
+      <td>groups</td>
+      <td>Print group names a user is in</td>
+    </tr>
+    <tr>
+      <td>gzip</td>
+      <td>Compress or decompress named file(s)</td>
+    </tr>
+    <tr>
+      <td>head</td>
+      <td>Output the first part of file(s)</td>
+    </tr>
+    <tr>
+      <td>hostname</td>
+      <td>Print or set system name</td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>Print user and group id's</td>
+    </tr>
+    <tr>
+      <td>info</td>
+      <td>Help info</td>
+    </tr>
+    <tr>
+      <td>install</td>
+      <td>Copy files and set attributes</td>
+    </tr>
+    <tr>
+      <td>join</td>
+      <td>Join lines on a common field</td>
+    </tr>
+    <tr>
+      <td>kill</td>
+      <td>Stop a process from running</td>
+    </tr>
+    <tr>
+      <td>less</td>
+      <td>Display output one screen at a time</td>
+    </tr>
+    <tr>
+      <td>ln</td>
+      <td>Make links between files</td>
+    </tr>
+    <tr>
+      <td>locate</a></td>
+      <td>Find files</td>
+    </tr>
+    <tr>
+      <td>logname</td>
+      <td>Print current login name</td>
+    </tr>
+    <tr>
+      <td>lpc</td>
+      <td>Line printer control program</td>
+    </tr>
+    <tr>
+      <td>lpr</td>
+      <td>Off line print</td>
+    </tr>
+    <tr>
+      <td>lprm</td>
+      <td>Remove jobs from the print queue</td>
+    </tr>
+    <tr>
+      <td>ls</td>
+      <td>List information about file(s)</td>
+    </tr>
+    <tr>
+      <td>man</td>
+      <td>Help manual</td>
+    </tr>
+    <tr>
+      <td>mkdir</td>
+      <td>Create new folder(s)</td>
+    </tr>
+    <tr>
+      <td>mkfifo</td>
+      <td>Make FIFOs (named pipes)</td>
+    </tr>
+    <tr>
+      <td>mknod</td>
+      <td>Make block or character special files</td>
+    </tr>
+    <tr>
+      <td>more</td>
+      <td>Display output one screen at a time</td>
+    </tr>
+    <tr>
+      <td>mount</td>
+      <td>Mount a file system</td>
+    </tr>
+    <tr>
+      <td>mv</td>
+      <td>Move or rename files or directories</td>
+    </tr>
+    <tr>
+      <td>nice</td>
+      <td>Set the priority of a command or job</td>
+    </tr>
+    <tr>
+      <td>nl</td>
+      <td>Number lines and write files</td>
+    </tr>
+    <tr>
+      <td>nohup</td>
+      <td>Run a command immune to hangups</td>
+    </tr>
+    <tr>
+      <td>passwd</td>
+      <td>Modify a user password</td>
+    </tr>
+    <tr>
+      <td>paste</td>
+      <td>Merge lines of files</td>
+    </tr>
+    <tr>
+      <td>pathchk</td>
+      <td>Check file name portability</td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>Convert text files for printing</td>
+    </tr>
+    <tr>
+      <td>printcap</td>
+      <td>Printer capability database</td>
+    </tr>
+    <tr>
+      <td>printenv</td>
+      <td>Print environment variables</td>
+    </tr>
+    <tr>
+      <td>printf</td>
+      <td>Format and print data</td>
+    </tr>
+    <tr>
+      <td>ps</td>
+      <td>Process status</td>
+    </tr>
+    <tr>
+      <td>pwd</td>
+      <td>Print Working Directory</td>
+    </tr>
+    <tr>
+      <td>quota</td>
+      <td>Display disk usage and limits</td>
+    </tr>
+    <tr>
+      <td>quotacheck</td>
+      <td>Scan a file system for disk usage</td>
+    </tr>
+    <tr>
+      <td>quotactl</td>
+      <td>Set disk quotas</td>
+    </tr>
+    <tr>
+      <td>ram</td>
+      <td>ram disk device</td>
+    </tr>
+    <tr>
+      <td>rcp</td>
+      <td>Copy files between two machines</td>
+    </tr>
+    <tr>
+      <td>rm</td>
+      <td>Remove files</td>
+    </tr>
+    <tr>
+      <td>rmdir</td>
+      <td>Remove folder(s)</td>
+    </tr>
+    <tr>
+      <td>rpm</td>
+      <td>Remote Package Manager</td>
+    </tr>
+    <tr>
+      <td>rsync</td>
+      <td>Remote file copy (Synchronize file trees)</td>
+    </tr>
+    <tr>
+      <td>screen</td>
+      <td>Terminal window manager</td>
+    </tr>
+    <tr>
+      <td>sdiff</td>
+      <td>Merge two files interactively</td>
+    </tr>
+    <tr>
+      <td>sed</td>
+      <td>Stream Editor</td>
+    </tr>
+    <tr>
+      <td>select</td>
+      <td>Accept keyboard input</td>
+    </tr>
+    <tr>
+      <td>seq</td>
+      <td>Print numeric sequences</td>
+    </tr>
+    <tr>
+      <td>shutdown</td>
+      <td>Shutdown or restart linux</td>
+    </tr>
+    <tr>
+      <td>sleep</td>
+      <td>Delay for a specified time</td>
+    </tr>
+    <tr>
+      <td>sort</td>
+      <td>Sort text files</td>
+    </tr>
+    <tr>
+      <td>split</td>
+      <td>Split a file into fixed-size pieces</td>
+    </tr>
+    <tr>
+      <td>su</td>
+      <td>Substitute user identity</td>
+    </tr>
+    <tr>
+      <td>sum</td>
+      <td>Print a checksum for a file</td>
+    </tr>
+    <tr>
+      <td>symlink</td>
+      <td>Make a new name for a file</td>
+    </tr>
+    <tr>
+      <td>sync</td>
+      <td>Synchronize data on disk with memory</td>
+    </tr>
+    <tr>
+      <td>tac</td>
+      <td>Concatenate and write files in reverse</td>
+    </tr>
+    <tr>
+      <td>tail</td>
+      <td>Output the last part of files</td>
+    </tr>
+    <tr>
+      <td>tar</td>
+      <td>Tape Archiver</td>
+    </tr>
+    <tr>
+      <td>tee</td>
+      <td>Redirect output to multiple files</td>
+    </tr>
+    <tr>
+      <td>test</td>
+      <td>Evaluate a conditional expression</td>
+    </tr>
+    <tr>
+      <td>time</td>
+      <td>Measure Program Resource Use</td>
+    </tr>
+    <tr>
+      <td>touch</td>
+      <td>Change file timestamps</td>
+    </tr>
+    <tr>
+      <td>top</td>
+      <td>List processes running on the system</td>
+    </tr>
+    <tr>
+      <td>traceroute</td>
+      <td>Trace Route to Host</td>
+    </tr>
+    <tr>
+      <td>tr</td>
+      <td>Translate, squeeze, and/or delete characters</td>
+    </tr>
+    <tr>
+      <td>true</td>
+      <td>Do nothing, successfully</td>
+    </tr>
+    <tr>
+      <td>tsort</td>
+      <td>Topological sort</td>
+    </tr>
+    <tr>
+      <td>tty</td>
+      <td>Print filename of terminal on stdin</td>
+    </tr>
+    <tr>
+      <td>umount</td>
+      <td>Unmount a device</td>
+    </tr>
+    <tr>
+      <td>uname</td>
+      <td>Print system information</td>
+    </tr>
+    <tr>
+      <td>unexpand</td>
+      <td>Convert spaces to tabs</td>
+    </tr>
+    <tr>
+      <td>uniq</td>
+      <td>Uniquify files</td>
+    </tr>
+    <tr>
+      <td>units</td>
+      <td>Convert units from one scale to another</td>
+    </tr>
+    <tr>
+      <td>unshar</td>
+      <td>Unpack shell archive scripts</td>
+    </tr>
+    <tr>
+      <td>useradd</td>
+      <td>Create new user account</td>
+    </tr>
+    <tr>
+      <td>usermod</td>
+      <td>Modify user account</td>
+    </tr>
+    <tr>
+      <td>users</td>
+      <td>List users currently logged in</td>
+    </tr>
+    <tr>
+      <td>uuencode</td>
+      <td>Encode a binary file</td>
+    </tr>
+    <tr>
+      <td>uudecode</td>
+      <td>Decode a file created by uuencode</td>
+    </tr>
+    <tr>
+      <td>vdir</td>
+      <td>Verbosely list directory contents (`ls -l -b')</td>
+    </tr>
+    <tr>
+      <td>watch</td>
+      <td>Execute/display a program periodically</td>
+    </tr>
+    <tr>
+      <td>wc</td>
+      <td>Print byte, word, and line counts</td>
+    </tr>
+    <tr>
+      <td>whereis</td>
+      <td>Report all known instances of a command</td>
+    </tr>
+    <tr>
+      <td>which</td>
+      <td>Locate a program file in the user's path</td>
+    </tr>
+    <tr>
+      <td>who</td>
+      <td>Print all usernames currently logged in</td>
+    </tr>
+    <tr>
+      <td>whoami</td>
+      <td>Print the current user id and name (`id -un')</td>
+    </tr>
+    <tr>
+      <td>xargs</td>
+      <td>Execute utility, passing constructed argument list(s)</td>
+    </tr>
+    <tr>
+      <td>yes</td>
+      <td>Print a string until interrupted</td>
+    </tr>
+  </tbody>
+</table>
+<h1>Linux networking commands</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Command</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>ifconfig</td>
+        <td>Shows basic network details such as IP addresses, broadcast address, mac address and more.
+        </td>
+      </tr>
+      <tr>
+        <td>iwconfig</td>
+        <td>Like ifconfig but focused on wireless connections
+        </td>
+      </tr>
+      <tr>
+        <td>ping</td>
+        <td>To see if the computer can communicate over the network with another computer or network device
+        </td>
+      </tr>
+      <tr>
+        <td>netstat</td>
+        <td>It delivers basic statistic on all network activities and informs users on which port and addresses the corrisponding connections (TCP,UDP) are running and which ports are open for tasks.
+        </td>
+      </tr>
+      <tr>
+        <td>arp</td>
+        <td>It’s used to find ip to MAC address mappings. Address Resolution Protocol is a protocol used to map a mac address to an IP address.
+        </td>
+      </tr>
+      <tr>
+        <td>route</td>
+        <td>It fetches the routing table. It tells where all the network is actually routed.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <script>
+    const nightModeToggle = document.getElementById('nightModeToggle');
+    const nightModeCheckbox = document.getElementById('nightModeCheckbox');
+    const body = document.body;
+
+    nightModeToggle.addEventListener('click', () => {
+      body.classList.toggle('night-mode', nightModeCheckbox.checked);
+    });
+  </script>
+</body>
+</html>
